@@ -1,5 +1,5 @@
 {
-    "name": "secomapp/l5-getresponse",
+    "name": "baorv/l5-getresponse",
     "keywords": ["secomapp", "getresponse", "laravel", "api", "integration"],
     "description": "GetResponse API Integration for Laravel 5.*",
     "type": "library",
