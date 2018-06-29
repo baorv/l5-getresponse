@@ -1,17 +1,17 @@
 # l5-getresponse
 <p align="center">
 <a href="https://travis-ci.org/roanvanbao/l5-getresponse"><img src="https://travis-ci.org/roanvanbao/l5-getresponse" alt="Build Status"></a>
-<a href="https://packagist.org/packages/secomapp/l5-getresponse"><img src="https://poser.pugx.org/secomapp/l5-getresponse/license.svg" alt="License"></a>
+<a href="https://packagist.org/packages/baorv/l5-getresponse"><img src="https://poser.pugx.org/baorv/l5-getresponse/license.svg" alt="License"></a>
 </p>
 
 GetResponse API Integration for Laravel 5.*
 
 ## Installation
 
-You can install package "secomapp/l5-getresponse" by command
+You can install package "baorv/l5-getresponse" by command
 
 ```bash
-composer require "secomapp/l5-getresponse":"dev-master"
+composer require "baorv/l5-getresponse":"dev-master"
 ```
 
 Or other way, add the package to require lists in composer.json and run composer update to install the package.
@@ -20,7 +20,7 @@ Or other way, add the package to require lists in composer.json and run composer
 ...
     "require": {
         ...
-        "secomapp/l5-getresponse":"dev-master"
+        "baorv/l5-getresponse":"dev-master"
         ...
     }
 ...
