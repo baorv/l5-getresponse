@@ -1,0 +1,51 @@
+{
+    "name": "secomapp/l5-getresponse",
+    "keywords": ["secomapp", "getresponse", "laravel", "api", "integration"],
+    "description": "GetResponse API Integration for Laravel 5.*",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/roanvanbao/l5-getresponse",
+    "authors": [
+        {
+            "name": "baorv",
+            "email": "roanvanbao@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=5.0.0",
+        "getresponse/getresponse": "~0.0.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.0",
+        "phpunit/phpunit": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Secomapp\\GetResponse\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ],
+        "psr-4": {
+            "Secomapp\\GetResponse\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Secomapp\\GetResponse\\GetResponseServiceProvider"
+            ],
+            "aliases": {
+                "GetResponse": "Secomapp\\GetResponse\\Facades\\GetResponse"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
