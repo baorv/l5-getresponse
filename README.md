@@ -34,12 +34,12 @@ return [
     ...
     'providers' => [
         ...
-        '\Secomapp\GetResponse\GetResponseServiceProvider'
+        '\Secomapp\GetResponse\GetResponseServiceProvider',
         ...
     ],
-    'alias' => [
+    'aliases' => [
         ...
-        '\Secomapp\GetResponse\Facades\GetResponse'
+        '\Secomapp\GetResponse\Facades\GetResponse',
         ...
     ]
     ...
@@ -64,9 +64,12 @@ GETRESPONSE_APIKEY=
 
 In everywhere, you can use to work with GetResponse
 ```php
-\GetResponse::accounts();
-\GetResponse::getCampaigns();
-\GetResponse::getCampaign($campaign_id);
+
+use Secomapp\GetResponse\Facades\GetResponse;
+
+GetResponse::accounts();
+GetResponse::getCampaigns();
+GetResponse::getCampaign($campaign_id);
 ```
 
 ## Helpers
