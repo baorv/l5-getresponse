@@ -1,6 +1,6 @@
 # l5-getresponse
 <p align="center">
-<a href="https://travis-ci.org/roanvanbao/l5-getresponse"><img src="https://travis-ci.org/roanvanbao/l5-getresponse" alt="Build Status"></a>
+<a href="https://travis-ci.org/roanvanbao/l5-getresponse"><img src="https://travis-ci.org/roanvanbao/l5-getresponse.svg?branch=master" alt="Build Status"></a>
 <a href="https://packagist.org/packages/baorv/l5-getresponse"><img src="https://poser.pugx.org/baorv/l5-getresponse/license.svg" alt="License"></a>
 </p>
 
