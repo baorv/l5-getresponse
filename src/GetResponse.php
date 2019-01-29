@@ -94,7 +94,7 @@ class GetResponse
             CURLOPT_TIMEOUT => $this->timeout,
             CURLOPT_HEADER => false,
             CURLOPT_USERAGENT => 'PHP GetResponse client 0.0.2',
-            CURLOPT_HTTPHEADER => array('X-Auth-Token: api-key ' . $this->api_key, 'Content-Type: application/json')
+            CURLOPT_HTTPHEADER => array("X-Auth-Token: api-key {$this->api_key}", 'Content-Type: application/json')
         );
         if (!empty($this->enterprise_domain)) {
             $options[CURLOPT_HTTPHEADER][] = 'X-Domain: ' . $this->enterprise_domain;
@@ -115,7 +115,7 @@ class GetResponse
         curl_close($curl);
         $objectResponse = (object)$response;
         if (isset($objectResponse->httpStatus) && $objectResponse->httpStatus !== Response::HTTP_OK) {
-            throw new GetResponseException();
+            throw new GetResponseException(json_encode($objectResponse));
         }
         return $objectResponse;
     }
@@ -159,7 +159,7 @@ class GetResponse
      */
     public function getRSSNewsletters()
     {
-        $this->call('rss-newsletters', 'GET', null);
+        return $this->call('rss-newsletters', 'GET', null);
     }
 
     /**
@@ -344,7 +344,7 @@ class GetResponse
     /**
      * retrieve single custom field
      *
-     * @param string $cs_id obtained by API
+     * @param string $custom_id obtained by API
      * @return mixed
      * @throws GetResponseException
      */
